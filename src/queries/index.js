@@ -29,6 +29,11 @@ const ALL_POKEMON = gql`
           name
         }
       }
+      pokemon_v2_pokemonspecy {
+        pokemon_v2_pokemoncolor {
+          name
+        }
+      }
     }
   }
 `;

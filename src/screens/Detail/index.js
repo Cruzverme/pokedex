@@ -1,10 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import {Header} from './styles';
 
 export default function Detail() {
   return (
     <View>
-      <Text>SOU DETALHE</Text>
+      <Header>
+        <Text>aeae</Text>
+      </Header>
     </View>
   );
 }

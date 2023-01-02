@@ -40,6 +40,10 @@ export function BasicInformationProvider({children}) {
     return statusNumber;
   }
 
+  function capitalizeWords(word) {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+  }
+
   useEffect(() => {
     function getPokemons() {
       setPokemons(data.pokemon_v2_pokemon);

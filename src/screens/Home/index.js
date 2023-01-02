@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {View, Text, FlatList, TextInput} from 'react-native';
 
 import Card from '../../components/Card';
+import Header from '../../components/Header';
 import {BasicInformationContext} from '../../contexts/BasicInformationContext';
 import {style, InformationTitle} from './styles';
 
@@ -10,6 +11,7 @@ export default function Home() {
 
   return (
     <View style={style.container}>
+      <Header/>
       <InformationTitle>
         More than 250 Pokemons for you to choose your favorite
       </InformationTitle>

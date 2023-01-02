@@ -51,6 +51,7 @@ export default function Card({item}) {
     letter-spacing: 0px;
     color: #ffffff;
     opacity: 1;
+    text-transform: capitalize;
   `;
 
   const PkmNumber = styled.View`
@@ -92,21 +93,6 @@ export default function Card({item}) {
     opacity: 1;
   `;
 
-  function mapImage(img) {
-    let srcImage = '';
-    img.map((e, inde) => {
-      srcImage = (
-        <CardImage
-          source={{
-            uri: JSON.parse(e.sprites).other['official-artwork'].front_default,
-          }}
-          accessibilityLabel={item.name}
-        />
-      );
-    });
-
-    return srcImage;
-  }
   function mapType(types) {
     let typeList = [];
 
